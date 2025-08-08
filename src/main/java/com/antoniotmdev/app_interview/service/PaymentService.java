@@ -62,8 +62,6 @@ public class PaymentService {
      * @param id The ID of the payment to find.
      * @return The {@link PaymentEntity} entity if found.
      */
-    @Operation(summary = "Get payment by ID")
-    @GetMapping("/{id}")
     public PaymentEntity getPaymentById(Long id) {
         return paymentRepository.findById(id)
                 .orElseThrow(() -> new PaymentNotFoundException("Payment with ID " + id + " not found"));
