@@ -22,7 +22,7 @@ import java.util.Optional;
  * Provides endpoints to create, retrieve, and delete payments.
  */
 @RestController
-@RequestMapping("/payments")
+@RequestMapping("/api/payments")
 @Tag(name = "Payments", description = "Operations related to payments")
 public class PaymentController {
 

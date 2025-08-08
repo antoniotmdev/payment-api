@@ -31,7 +31,7 @@ public class PaymentService {
     /**
      * Create a new {@link PaymentEntity} from the provided DTO.
      *
-     * @param request DTO containing payment details.
+     * @param request DTO containing payments details.
      * @return Persisted {@link PaymentEntity} entity.
      */
     public PaymentEntity createPayment(PaymentRequestDto request){
